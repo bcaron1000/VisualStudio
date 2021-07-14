@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "avatar": "img/jane_doe.jpg",
+    "email": "janed@example.com",
+    "hometown": "Edmonton, AB",
+    "bio": "Jane Doe is an American science educator and mechanical engineer best known for hosting the television program Jane Doe the Science Girl. After graduating from Corny University, she moved to Seattle to work as a mechanical engineer for Boeing and eventually became a comedy show writer and performer."
+
+}
