@@ -1,0 +1,211 @@
+html{
+    font-family: Arial, sans-serif;
+}
+nav ul {
+    text-transform: uppercase;
+    /*this makes everything in this section uppercase*/
+    list-style: none;
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0; /* use left and right 0 to center*/
+    text-align: left;
+}
+ul{
+    list-style: none;
+    background-color: white;
+}
+li{
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.banner p {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin:1rem, 0 rem;
+    position: fixed;
+    padding: 16px;
+    border-bottom: 1px solid black;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+header>div {
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+h1, .fas, .fab {
+    font-size: 1.5rem;
+    height: 1.25rem;
+    color: #dbecec;
+}
+h1 a{ 
+    margin-left: 1rem;
+    color: #cf0a2c;
+    font-weight: 900;
+}
+nav ul a:hover{
+    color:#cf0a2c ;
+}
+nav ul a {
+    font-weight: 900;
+    display: block;
+    padding-top: 1rem;
+
+}
+nav ul{
+    border-bottom: 1px solid black;
+}
+.menu-btn{
+    height: 1.25rem;
+    color: #dbecec;
+}
+.active {
+    color: #cf0a2c;
+}
+.overlay {
+    background-color: rgb(50, 50, 50,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locations{
+    background-color: white;
+    max-width:90vw;
+    padding: 1.5%;
+}
+.banner{
+    background-image: url(../img/FG-Menu-Hero.webp);
+    background-position: bottom center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding: 4rem 0rem 2rem;
+}
+
+main h3 {
+    font-weight: bolder;
+    font-size: 1.333em;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+main span{
+    font-weight: bold;
+    
+}
+main li {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    line-height: 1rem;
+}
+@media(hover:none){
+    
+.banner{height: 100vh;}
+}
+main{
+    padding-top: 75px;
+    text-align:center;
+}
+.center p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main a:hover{
+    text-decoration: underline;
+    color: red;
+}
+@media(min-width:768px){
+    nav ul{
+        border-bottom: none;
+    }
+    .menu-btn{
+        display: none;
+    }
+    h1 a{
+        margin-left: 0px;
+    }
+    nav ul {
+        position: static;
+        display: flex !important;
+        border-top: none; 
+    }
+    nav{
+        display: flex;
+       align-items: baseline;
+    }
+    nav li {
+        margin-right: 1rem;
+    }
+    .mobile{
+        display: none;
+    }
+    nav li a:hover{
+        text-decoration: underline;
+    }
+    .locations{
+        max-width: 50vw;
+    }
+    .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    .wrap li:after{
+        content: '\2022';
+        padding: 0px 8px;
+    }
+    .wrap li:last-child:after{
+        content: '';
+    }
+    .banner p {
+        width: 50%;
+        min-width: 250px;
+        max-width: 600px;
+        padding-top: .5rem;
+        padding-bottom: .5rem;   
+    }
+}
+@media(min-width:960px){
+    main div{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    main div section{
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        max-width: 33%;
+    }
+}
+
